@@ -18,8 +18,8 @@ services:
   sql-storage-test-runner:
     build: .
     depends_on:
-      db:
+      pg-storge-test-db:
         condition: service_healthy
     environment:
-      TEST_DB_URL: postgresql://test_user:test_pass@db:5432/test_db
+      TEST_DB_URL: postgresql://test_user:test_pass@pg-storge-test-db:5432/test_db
     command: poetry run pytest tests
