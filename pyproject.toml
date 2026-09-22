@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "sql_storage_operations_ivy"
-version = "1.0.0"
+version = "1.0.1"
 description = "SQL Storage Middleware for SQLite and Postgres"
 authors = ["Patrick White <whitep@alumni.vcu.edu>"]
 
 [project]
 name = "sql_storage_operations_ivy"
-version = "1.0.0"
+version = "1.0.1"
 description = "SQL Storgage Middleware for SQLite and Postgres"
 authors = [{name="Patrick White", email="whitep@alumni.vcu.edu"}]
 
@@ -15,8 +15,6 @@ python = "^3.11"
 pre-commit = "^4.2.0"
 structlog = "^25.2.0"
 psycopg = {extras = ["binary", "pool"], version = "^3.2.7"}
-psycopg-c = "^3.2.7"
-psycopg2-binary = "^2.9.10"
 pytest = "^8.3.5"
 
 [build-system]
